@@ -1,6 +1,6 @@
 # 🧠 Projeto Compilador Lisp
 
-Compilador/interpretador de um **subconjunto da linguagem Lisp**, implementado em **Python**, desenvolvido como projeto acadêmico da disciplina de **Compiladores**.
+Compilador/interpretador de um **subconjunto da linguagem Lisp**, implementado em **Python**, desenvolvido como projeto acadêmico da disciplina de **Projeto Integrador III**.
 
 ---
 
@@ -32,17 +32,15 @@ Durante a execução, o compilador é capaz de:
 ## 🚀 Como Executar
 
 1. Instale a dependência necessária:
-   ```bash
-   pip install ply
-
+```bash
+pip install ply
+```
 
 Execute o compilador:
 
  ```bash
 python Compilador.py
 ```
-
-
 Um terminal interativo será iniciado.
 Digite expressões Lisp ou sair para encerrar.
 --- 
@@ -56,8 +54,8 @@ Digite expressões Lisp ou sair para encerrar.
 (soma (cons 10 (cons 20 (cons 30 nil))))
 
 ## ⚠️ Limitações
-Suporte apenas a um subconjunto da linguagem Lisp
-Tipagem dinâmica sem verificação estática
-Escopo simplificado baseado em cópia de memória
-Ausência de otimizações no código intermediário
+Suporte apenas a um subconjunto da linguagem Lisp,
+Tipagem dinâmica sem verificação estática,
+Escopo simplificado baseado em cópia de memória,
+Ausência de otimizações no código intermediário,
 
