@@ -1,1 +1,65 @@
-# Compilador-B-sico-LISP
+🧠 Projeto Compilador Lisp
+
+Compilador/interpretador de um subconjunto da linguagem Lisp, implementado em Python, desenvolvido como projeto acadêmico da disciplina de Compiladores.
+
+😎 Descrição
+
+Este projeto implementa as principais etapas do processo de compilação, permitindo a escrita, análise e execução de programas Lisp simplificados. O sistema processa o código-fonte desde a análise léxica até a execução em uma máquina virtual, com suporte a funções recursivas e manipulação de listas.
+
+Durante a execução, o compilador é capaz de:
+
+Analisar lexical e sintaticamente expressões Lisp
+
+Construir uma Árvore Sintática Abstrata (AST)
+
+Gerar código intermediário no formato de três endereços
+
+Executar o código em uma máquina virtual
+
+Definir e chamar funções (defun)
+
+Trabalhar com listas (cons, car, cdr, nil)
+
+Executar operações aritméticas, condicionais e recursivas
+
+🛠️ Tecnologias Utilizadas
+
+Linguagem: Python 3
+
+Biblioteca: PLY (Python Lex-Yacc)
+
+Paradigma: Compiladores e Interpretadores
+
+Estruturas de Dados: Listas, Tuplas e Dicionários
+
+🚀 Como Executar
+
+Instale a dependência necessária:
+  ```bash
+  pip install ply
+```
+
+Execute o compilador:
+
+ ```bash
+python Compilador.py
+```
+
+
+Um terminal interativo será iniciado.
+Digite expressões Lisp ou sair para encerrar.
+
+🧪 Exemplo de Uso
+(defun soma (lista)
+  (if (eq lista nil)
+      0
+      (+ (car lista) (soma (cdr lista)))))
+
+(soma (cons 10 (cons 20 (cons 30 nil))))
+
+⚠️ Limitações
+Suporte apenas a um subconjunto da linguagem Lisp
+Tipagem dinâmica sem verificação estática
+Escopo simplificado baseado em cópia de memória
+Ausência de otimizações no código intermediário
+
